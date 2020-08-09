@@ -1,0 +1,193 @@
+body {
+    align-items: center;
+    margin: auto;
+    background-color: darkviolet;
+    font-weight: bolder;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.main-enter {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#name {
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#labelname {
+    color: white;
+    font-size: 32px;
+}
+
+#startbtn {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 100px;
+    border: 2px solid darkgreen;
+}
+
+#startbtn:hover {
+    cursor: pointer;
+}
+
+#startbtn:active {
+    background-color: black;
+    color: white;
+}
+
+.question-section {
+    width: 70%;
+    height: 75vh;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-side {
+    height: 200px;
+    width: 100px;
+    transform: rotate(400deg);
+    position: relative;
+    left: -30px;
+    top: -65px;
+}
+
+.option {
+    width: 250px;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 120px;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    border: 2px solid darkgreen;
+}
+
+.option :hover {
+    background-color: black;
+    color: white;
+}
+
+.nextbtn {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    padding: 5px 55px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.nextbtn:hover {
+    background-color: rgb(91, 190, 91);
+}
+
+.question {
+    position: absolute;
+    top: 50px;
+    left: 115px;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 940px) {
+    .question-section {
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        width: 90%;
+        margin: 30px auto 0 auto;
+        overflow: hidden;
+        height: 75vh;
+        position: relative;
+    }
+    .option {
+        width: 75%;
+        margin: 0 auto 10px 10%;
+        padding: 10px 10px;
+        display: inline-block;
+        position: relative;
+        top: -10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        box-shadow: 0 0 10px grey;
+        border-radius: 5px;
+    }
+    .option:hover {
+        background-color: black;
+        color: white;
+    }
+    .option p {
+        color: black;
+        font-size: 12px;
+        transition: all 0.5s;
+    }
+    .option p:hover {
+        color: white;
+    }
+    .nextbtn {
+        border: none;
+        background-color: black;
+        font-size: 20px;
+        padding: 5px 55px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        box-shadow: 0 0 10px grey;
+        transition: background-color 0.5s;
+    }
+    .nextbtn:hover {
+        background-color: rgb(91, 190, 91);
+    }
+    .question {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        font-size: 15px;
+    }
+    #name {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 32px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+    #labelname {
+        color: white;
+        font-size: 32px;
+    }
+    #startbtn {
+        width: 90%;
+        height: 30px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 22px;
+        margin-left: 0;
+    }
+}

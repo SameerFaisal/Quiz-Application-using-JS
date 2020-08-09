@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/02/62/85/16/240_F_262851653_jrZcVOIBNUHJjDYZCP7Rka0jobSrrIuQ.jpg" type="image/gif">
+
+</head>
+
+<body>
+
+    <h1>General Knowledge Quiz</h1>
+    <p id="username" style="color: white; font-size: 22px; text-align: center;"></p>
+    <div class="main-enter" id="main-enter">
+        <label for="name" id="labelname">Name: </label>
+        <input type="name" id="name" placeholder="Enter your name"><br>
+        <input type="button" id="startbtn" value="Start" onclick="start()">
+    </div>
+
+
+    <div class="question-section" id="mainQ" style="display: none;">
+        <div class="top-side">
+
+        </div>
+        <p class="question" id="question"></p>
+        <button id="option1" class="option" onclick="trueoption(this)"></button>
+        <button id="option2" class="option" onclick="trueoption(this)"></button>
+        <button id="option3" class="option" onclick="trueoption(this)"></button>
+        <button id="option4" class="option" onclick="trueoption(this)"></button>
+        <button class="nextbtn" onclick="next()">Next Question</button>
+    </div>
+
+    <div id="score-box" style=" padding: 20px; display: none;">
+        <h1 style="text-align: center;">Your Score</h1>
+        <h2 id="score" style="text-align: center; color: black;"></h2>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
